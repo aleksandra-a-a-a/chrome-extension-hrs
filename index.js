@@ -53,23 +53,30 @@ function sumTotal() {
     
 }
 
+function isLunchIncluded(start, end) {
+              let lunchStart = new Date(start)
+              lunchStart.setHours(13, 0, 0)
+              let lunchEnd = new Date(end);
+              lunchEnd.setHours(14, 0, 0)
+               return start < lunchStart.getTime() && end >= lunchEnd
+            }
+
+            
 function getData() {
         let data = eval(document.getElementById("input").value)
         let dataNoLunch = []
         data = data.filter( el => {
           if (!(el.title).includes("Lunch"))
           dataNoLunch.push(el)
-          const endTime = dataNoLunch.endLong;
-          const startTime = dataNoLunch.startLong;
+          const endTime = el.endLong;
+          const startTime = el.startLong;
           const timeSpentInMs = endTime - startTime;
-          // const title = dataNoLunch.title.substring(0, dataNoLunch.title.indexOf("-"))
           
-        }) 
-        console.log(dataNoLunch)
+           
+        })
         
-        
-
-      
+}
+  
         // data.map((day) => {
         // const endTime = day.endLong;
         // const startTime = day.startLong;
@@ -80,9 +87,9 @@ function getData() {
         //   finalResult[title] = [];
         // }
         // finalResult[title].push(day);});
-        sumProjects()
-        sumTotal()
-      } 
+        // sumProjects()
+        // sumTotal()
+      
 
 
 
