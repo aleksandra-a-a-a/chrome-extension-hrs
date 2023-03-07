@@ -1,0 +1,36 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    font-family: 'Quicksand', sans-serif;
+    background: #E6EBE0;
+    text-align: center;
+
+}
+
+.main {
+    max-width: 100%;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+textarea {
+    height: 100px;
+    margin-bottom: 10px;
+    resize: none;
+    background-color: whitesmoke;
+    
+}
+
+button {
+width: 200px;
+height: 50px;
+font-size: 20px;
+border-radius: 10px;
+align-self: center;
+background-color: #3E885B;
+outline: none;
+cursor: pointer;
+color: whitesmoke
+}
