@@ -1,0 +1,66 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  font-family: "Quicksand", sans-serif;
+  background: #f2eae5;
+  text-align: center;
+  min-width: 400px;
+}
+
+.main {
+  max-width: 100%;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+textarea {
+  height: 100px;
+  margin-bottom: 10px;
+  resize: none;
+  background-color: whitesmoke;
+}
+
+button {
+  width: 200px;
+  height: 50px;
+  font-size: 20px;
+  border-radius: 10px;
+  align-self: center;
+  cursor: pointer;
+  color: whitesmoke;
+}
+
+select {
+  margin-bottom: 20px;
+  width: 200px;
+  height: 30px;
+  align-self: center;
+}
+
+.results {
+  margin-top: 20px;
+}
+
+header {
+  margin: 20px;
+}
+
+h1 {
+  margin-bottom: 10px;
+}
+
+#clear {
+  margin: 10px;
+  width: 100px;
+  background-color: green;
+}
+
+#get--hours {
+  background-color: #f07730;
+}
+
+.project--total {
+  margin-top: 20px;
+}

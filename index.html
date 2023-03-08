@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500&display=swap" rel="stylesheet">
+    <title>Working hours calculator</title>
+</head>
+<body>
+    <div class="main" id="main">
+        <header>
+        <h1>💻 Your Sorint.lab working hours calculator</h1>
+        <p>Paste your JSON file in the text area, choose the month and we will generate your total working hours. Lunch <b>is</b> or <b>not</b> included, depeneding on your JSON.</p>
+        </header>
+        <textarea id='input'></textarea>
+        <select id="month" required>
+            <option value="">Select month...</option>
+            <option name='January' value="2023-01">January</option>
+            <option name='February' value="2023-02">February</option>
+            <option name='March' value="2023-03">March</option>
+            <option name='April' value="2023-04">April</option>
+            <option name='May' value="2023-05">May</option>
+            <option name='June' value="2023-06">June</option>
+            <option name='July' value="2023-07">July</option>
+            <option name='August' value="2023-08">August</option>
+            <option name='September' value="2023-09">September</option>
+            <option name='October' value="2023-10">October</option>
+            <option name='November' value="2023-11">November</option>
+            <option name='December' value="2023-12">December</option>
+        </select>
+        <button id="get--hours">Get hours</button>
+        <button id="clear" class="clear">Clear</button>
+    </div>
+    <script type='module' src="index.js"></script>
+</body>
+</html>

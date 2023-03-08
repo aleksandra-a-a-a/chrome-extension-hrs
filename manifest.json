@@ -1,0 +1,10 @@
+{
+    "manifest_version": 3,
+    "name": "Timetable calculator",
+    "description": "App that calculates your working hours based on your timetable",
+    "version": "1.0",
+    "action": {
+        "default_popup": "index.html",
+        "default_icon": "timetable.png"
+    }
+}
